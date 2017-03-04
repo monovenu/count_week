@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    body {
+        width: 375px;
+        height: 582px;
+        color: #333;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #333;
+    }
+    
+    a:hover {
+        color: #000;
+    }
+    
+    .box {
+        /*display: flex;*/
+    }
+    
+    .flower {
+        float: left;
+        display: block;
+        width: 290px;
+        height: 440px;
+        /*vertical-align: bottom;*/
+    }
+    
+    .past {
+        float: right;
+        padding-top: 10px;
+        height: 440px;
+        writing-mode: tb-rl;
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+        line-height: 24px;
+        color: #999;
+    }
+    
+    .clearfix:after {
+        display: table;
+        content: '';
+        clear: both;
+    }
+    
+    .begin {
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #e9e9e9;
+        border: solid 1px #555;
+        background: #6e6e6e;
+        background: -webkit-gradient(linear, left top, left bottom, from(#888), to(#575757));
+        border-radius: 2px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="box clearfix">
+        <img class="flower" src="images/flower.jpg" title="「日冬至，画素梅一枝，为瓣八十有一，日染一瓣，瓣尽而九九出，则春深矣。」">
+        <p class="past">
+            古人有“画梅数九”的习俗。「日冬至，画素梅一枝，为瓣八十有一，日染一瓣，瓣尽而九九出，则春深矣。」
+        </p>
+    </div>
+    <p>周一到周日，每天画一朵梅花，等七朵梅花画完，一周七天也随之过去。</p>
+    <a class="begin" href="popup.html">现在开始</a>
+</body>
+
+</html>
